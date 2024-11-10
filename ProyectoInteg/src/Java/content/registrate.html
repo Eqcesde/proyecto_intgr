@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="src/js/kitwind.config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>REGISTRO</title>
+
+    <style>
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .whatsapp-button i {
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+
+        <script src="script.js"></script>
+
+        <nav class="z-20 py-2 relative bg-white shadow dark:bg-gray-800 ">
+            <div class="container  mx-auto  flex px-8 xl:px-0">
+                <div class=" flex flex-grow  lg:w-auto lh:h-auto max-w-24 items-center "> <!--item center-->
+                    <img class="items-center sm md lg xl 2xl" src="/src/IMG/logoINSYpeque.jpg" alt="Logo">
+                </div>
+
+                <div class="flex lg:hidden justify-end w-full items-center " onclick=openMenu();>
+                    <a href="#" class="px-1 py-1   text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-
+                            4 ease-in-out ml-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" onclick="openMenu();" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div id="menu"
+                    class=" lg:flex hidden flex-grow justify-between absolute lg:relative top-full left-0 w-full py-1 px-8  z-10  lg:top-0  justify-items-cente ">
+                    <div class="flex flex-col lg:flex-row md:flex-row mb-4 lg:mb-0 mt-4 mx-auto">
+
+                        <a href="/index.html" class="font-bold uppercase pb-2 mb-2 px-3 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-
+                            4 ease-in-out mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center ">Inicio</a>
+                        <a href="/src/content/acercade.html" class="font-bold uppercase pb-2 mb-2 px-3 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-
+                            4 ease-in-out mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center ">Sobre Nosotros</a>
+
+                        <a href="/src/content/contact.html"
+                            class="font-bold uppercase pb-2 mb-2 px-2.5 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-4 ease-in-out  mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center">Contáctanos</a>
+                      
+                    </div>
+                </div>
+
+                <button id="search-button"
+                    class="  text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none focus:ring">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-4.35-4.35M18.65 10.65a7 7 0 1 0-9.9 9.9 7 7 0 0 0 9.9-9.9z"></path>
+                    </svg>
+                </button>
+                <div id="search-container"
+                    class="search-container w-40 overflow-hidden flex items-center bg-white rounded transition-all duration-500 ease-in-out ml-2">
+                    <input type="search" name="search" id="search" placeholder="Busqueda"
+                        class="w-full border-none bg-transparent p-1 text-black outline-none placeholder-gray-500">
+                </div>
+
+            </div>
+
+
+            <script>
+                function openMenu() {
+                    let menu = document.getElementById('menu');
+
+                    if (menu.classList.contains('hidden')) {
+                        menu.classList.remove('hidden');
+                    } else {
+                        menu.classList.add('hidden');
+                    }
+                }
+            </script>
+
+            <script>
+                const searchButton = document.getElementById('search-button');
+                const searchContainer = document.getElementById('search-container');
+
+                searchButton.addEventListener('click', () => {
+                    searchContainer.classList.toggle('expanded');
+                    if (searchContainer.classList.contains('expanded')) {
+                        searchContainer.style.width = '100%';
+                        searchContainer.querySelector('input').focus();
+                    } else {
+                        searchContainer.style.width = '0';
+                    }
+                });
+            </script>
+
+            <script>
+                function openMenu() {
+                    var menu = document.getElementById('menu');
+                    menu.classList.toggle('hidden');
+                }
+            </script>
+    </header>
+
+    <main>
+        <section class="bg-white min-h-screen flex items-center justify-center">
+
+            <!--contenedor del registro-->
+            <div class="bg-gray-100 flex rounded-2xl shadow-lg max-w-3xl">
+
+                <!--formulario-->
+                <div class="md:w-1/2 px-16 bg-gray-200 rounded-tl-xl rounded-bl-xl">
+                    <h2 class="font-bold text-2xl text-[#0D45A2]">REGISTRATE</h2>
+                    <p class="text-sm mt-4 text-gray-500 font-bold">Si ya eres miembro, inicia sesión fácilmente</p>
+
+                    <form action="" class="flex flex-col gap-4">
+                        <input class="bg-white p-2 mt-8 rounded-xl border" type="text" name="email" placeholder="Email">
+                        <div class="relative">
+                            <input class="bg-white p-2 rounded-xl border w-full" type="password" name="password"
+                                placeholder="Contraseña">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+                                class="bi bi-eye absolute top-3 right-3 -translate-y" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z" />
+                                <path
+                                    d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0" />
+                            </svg>
+                        </div>
+                        <button
+                            class="bg-[#0D45A2] rounded-xl text-white py-2 hover:scale-110 duration-700">REGISTRATE</button>
+                    </form>
+
+                    <div class="mt-10 grid grid-cols-3 items-center text-gray-500">
+                        <hr class="border-gray-900">
+                        <p class="text-center text-sm">OR</p>
+                        <hr class="border-gray-900">
+                    </div>
+
+                    <button
+                        class="bg-white border py-1 w-full rounded-xl mt-3 flex justify-center items-center hover:scale-110 duration-700">
+                        <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 18 18">
+                            <path fill="#4285f4"
+                                d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z" />
+                            <path fill="#34a853"
+                                d="M9.003 18c2.43 0 4.467-.806 5.956-2.18l-2.909-2.26c-.806.54-1.836.86-3.047.86-2.344 0-4.328-1.584-5.036-3.711H.96v2.332C2.44 15.983 5.485 18 9.003 18z" />
+                            <path fill="#fbbc05"
+                                d="M3.964 10.712c-.18-.54-.282-1.117-.282-1.71 0-.593.102-1.17.282-1.71V4.96H.957C.347 6.175 0 7.55 0 9.002c0 1.452.348 2.827.957 4.042l3.007-2.332z" />
+                            <path fill="#ea4335"
+                                d="M9.003 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.464.891 11.428 0 9.002 0 5.485 0 2.44 2.017.96 4.958L3.967 7.29c.708-2.127 2.692-3.71 5.036-3.71z" />
+                        </svg>
+                        <span class="bg-gray flex sm:w-1/2">REGISTRATE CON GOOGLE</span>
+                    </button>
+
+
+                    <p class="mt-2 text-xs border-b py-4 border-gray-400">Introduce tu contraseña</p>
+
+                    <div class="mt-2 text-xs flex justify-between items-center">
+
+                        <p>Si no tienes cuenta</p>
+                        <button
+                            class="py-2 px-4 bg-blue-200 border rounded-xl hover:scale-110 duration-700">REGISTRATE</button>
+                    </div>
+
+                </div>
+
+                <!--imagen-->
+                <div class="md:block hidden w-1/2 bg-gray-200 rounded-br-xl">
+                    <img class=" rounded-2xl" src="/src/IMG/logo-insy.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer p-10 bg-base-300 ">
+        <div class="grid_3">
+            <section id="text-2" class="widget widget_text">
+                <div class="textwidget object-contain w-16 h-16"><img src="/src/IMG/logoINSYpeque.jpg"
+                        atl="Hogar Reparación" title="Hogar Reparación"></div>
+            </section>
+
+
+            <div class="grid_3">
+                <section id="text-5" class="widget widget_text">
+                    <h3 class="encabezadofooter font-bold">Servicios de Reparación</h3>
+                    <div class="textwidget">
+                        <address>
+                            <ul class="address">
+                                <li>Gestionamos todo el proceso de asistencia y reparación de su comunidad y hogar.
+                                </li>
+                                <li>Confíe en nosotros, tenemos vocación por hacerle la vida más fácil a nuestros
+                                    clientes.</li>
+                            </ul>
+                        </address>
+                    </div>
+                </section>
+            </div>
+            <div class="grid_3">
+                <section id="text-4" class="widget widget_text">
+                    <h3 class="encabezadofooter font-bold">CONTACTO</h3>
+                    <div class="textwidget">
+                        <address>
+                            <ul class="phone">
+                                <li>Teléfono: (+57) 300 280 5724</li>
+                                <li></li>
+                            </ul>
+                            <ul class="email">
+                                <li>reparaciones@InsyHogar.com</li>
+                            </ul>
+                        </address>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="grid_3">
+            <section id="text-3" class="widget widget_text">
+                <h3 class="encabezadofooter font-bold">Descarga nuestra app</h3>
+                <div class="textwidget">
+                    <p><a title="Descargar Hogar Reparación IOS"
+                            onclick="_gaq.push(['_trackEvent', 'Descargas', 'Descargaappstore', 'botonverdehome','1' ])"
+                            href="https://itunes.apple.com/es/app/hogar-reparacion/id625286808?mt=8" target="blank"><img
+                                alt=""
+                                src="http://www.hogarreparacion.com/wp-content/uploads/2013/08/hogar-reparacion-app-ios.png"
+                                width="154" height="56"></a><br> <a title="Descargar Hogar Reparación ANDROID"
+                            onclick="_gaq.push(['_trackEvent', 'Descargas', 'Descargaandroid', 'botonverdehome','1' ])"
+                            href="https://play.google.com/store/apps/details?id=de.Rocky.Android.Hogar"
+                            target="blank"><img alt=""
+                                src="http://www.hogarreparacion.com/wp-content/uploads/2013/08/hogar-reparacion-app-android.png"
+                                width="154" height="56"></a></p>
+                </div>
+            </section>
+        </div>
+
+        <nav>
+            <p class="mt-4 text-gray-600"></p>
+            <h6 class="footer-title font-bold ">Social</h6>
+            <font></font>
+            <div class="grid grid-flow-col gap-4">
+                <button>
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current hover:bg-red-900">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                            </path>
+                        </svg></a>
+                    <font></font>
+                </button>
+                <button class=>
+                    <a><svg xmlns="https://www.facebook.com/insyhogar?mibextid=ZbWKwL" width="24" height="24"
+                            viewBox="0 0 24 24" class="fill-current hover:bg-blue-900">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                            </path>
+                        </svg></a>
+                    <font></font>
+                </button>
+            </div>
+            <font></font>
+        </nav>
+        <font></font>
+    </footer>
+
+</body>
+
+
+</html>

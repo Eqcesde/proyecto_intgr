@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta chartset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLOMERIA</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="src/js/kitwind.config.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .whatsapp-button i {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <script src="script.js"></script>
+
+        <nav class="z-20 py-2 relative bg-white shadow dark:bg-gray-800 ">
+            <div class="container  mx-auto  flex px-8 xl:px-0">
+                <div class=" flex flex-grow  lg:w-auto lh:h-auto max-w-24 items-center "> <!--item center-->
+                    <img class="items-center sm md lg xl 2xl" src="/src/IMG/logoINSYpeque.jpg" alt="Logo">
+                </div>
+
+                <div class="flex lg:hidden justify-end w-full items-center " onclick=openMenu();>
+                    <a href="#" class="px-1 py-1   text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-
+                            4 ease-in-out ml-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" onclick="openMenu();" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div id="menu"
+                    class=" lg:flex hidden flex-grow justify-between absolute lg:relative top-full left-0 w-full py-1 px-8  z-10  lg:top-0  justify-items-cente ">
+                    <div class="flex flex-col lg:flex-row md:flex-row mb-4 lg:mb-0 mt-4 mx-auto">
+                        <a href="/index.html" class="font-bold uppercase pb-2 mb-2 px-3 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-
+                            4 ease-in-out mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center ">Inicio</a>
+                        <a href="/src/content/acercade.html" class="font-bold uppercase pb-2 mb-2 px-3 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-
+                            4 ease-in-out mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center ">Sobre Nosotros</a>
+
+                        <a href="/src/content/contact.html"
+                            class="font-bold uppercase pb-2 mb-2 px-2.5 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-4 ease-in-out  mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center">Contáctanos</a>
+                        <a href="/src/content/registrate.html"
+                            class="font-bold uppercase pb-2 mb-2 px-2.5 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-4 ease-in-out  mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center">Regístrate</a>
+                    </div>
+                </div>
+
+                <button id="search-button"
+                    class="  text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none focus:ring">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-4.35-4.35M18.65 10.65a7 7 0 1 0-9.9 9.9 7 7 0 0 0 9.9-9.9z"></path>
+                    </svg>
+                </button>
+                <div id="search-container"
+                    class="search-container w-40 overflow-hidden flex items-center bg-white rounded transition-all duration-500 ease-in-out ml-2">
+                    <input type="search" name="search" id="search" placeholder="Busqueda"
+                        class="w-full border-none bg-transparent p-1 text-black outline-none placeholder-gray-500">
+                </div>
+
+            </div>
+
+
+            <script>
+                function openMenu() {
+                    let menu = document.getElementById('menu');
+
+                    if (menu.classList.contains('hidden')) {
+                        menu.classList.remove('hidden');
+                    } else {
+                        menu.classList.add('hidden');
+                    }
+                }
+            </script>
+
+            <script>
+                const searchButton = document.getElementById('search-button');
+                const searchContainer = document.getElementById('search-container');
+
+                searchButton.addEventListener('click', () => {
+                    searchContainer.classList.toggle('expanded');
+                    if (searchContainer.classList.contains('expanded')) {
+                        searchContainer.style.width = '100%';
+                        searchContainer.querySelector('input').focus();
+                    } else {
+                        searchContainer.style.width = '0';
+                    }
+                });
+            </script>
+
+            <script>
+                function openMenu() {
+                    var menu = document.getElementById('menu');
+                    menu.classList.toggle('hidden');
+                }
+            </script>
+    </header>
+
+
+    <main>
+        <div>
+            <img src="/src/IMG/logo-insy.jpg" class="absolute inset-0 object-cover w-full h-full" alt="" />
+            <div class="relative bg-gray-900 bg-opacity-75">
+                <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                    <div class="flex flex-col items-center justify-between xl:flex-row">
+                        <div class="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
+                            <h2
+                                class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-blue-700  sm:text-4xl sm:leading-none">
+                                INSYHOGAR<br class="hidden md:block" />
+                                SOBRE LA EMPRESA: <span class="text-teal-accent-400"></span>
+                            </h2>
+                            <p class="max-w-xl mb-4 text-base text-white md:text-lg">
+                                Ofrecemos servicios profesionales que están orientados a observar los cambios y
+                                movimientos en el
+                                mundo de la construccion y el mobiliario, para así ofrecer a nuestros clientes las
+                                últimas tendencias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="backdrop-grayscale-0">
+            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+                <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+                    <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+                        <img alt="" src="/src/IMG/tuberias-plomeria.jpg"
+                            class="absolute inset-0 h-full w-full object-cover" />
+                    </div>
+
+                    <div class="lg:py-24">
+                        <p class="mt-16"></p>
+                        <h2 class="text-3xl font-bold sm:text-4xl text-gray-600"> Servicio Profesional de Reparación de Tuberías</h2>
+
+                        <p class="mt-4 text-gray-600">
+
+                        <ul
+                            class="bg-orange-200 rounded-full px-4 py-1 mr-2 text-blue-400 font-bold text-2xl hover:bg-blue-900">
+                            Nuestros Servicios Incluyen:</ul>
+                        <p class="mt-4"></p>
+                        <li class="font-semibold font-serif text-lg ">Detección y reparación de fugas: Utilizamos tecnología avanzada para localizar y reparar
+                            fugas
+                            deagua con precisión.</li>
+                            <li class="font-semibold font-serif text-lg ">Reparación y sustitución de tuberías: Ya sea que necesites una reparación puntual o la
+                            sustitución completa de tuberías dañadas, estamos preparados para realizar el trabajo con
+                            los
+                            mejores materiales del mercado.</li>
+                            <li class="font-semibold font-serif text-lg "> Mantenimiento preventivo: Ofrecemos planes de mantenimiento para asegurar que tus tuberías
+                            se
+                            mantengan en óptimas condiciones y evitar problemas futuros.</li>
+                            <li class="font-semibold font-serif text-lg "> Atención de emergencias 24/7: Estamos disponibles las 24 horas del día, los 7 días de la
+                            semana,
+                            para atender cualquier emergencia que pueda surgir, garantizando una respuesta rápida y
+                            efectiva.</li>
+
+                        </p>
+
+                        <a href="#"
+                            class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400">
+                            Cotiza ahora!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+                <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+                    <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+                        <img alt="" src="/src/IMG/grifos-plomeria.jpg"
+                            class="absolute inset-0 h-full w-full object-cover" />
+                    </div>
+
+                    <div class="lg:py-24">
+                        <h2 class="text-3xl font-bold sm:text-4xl text-gray-600">Servicio Profesional de Reparación de Grifos</h2>
+
+                        <p class="mt-4 text-gray-600">
+                        <ul
+                            class="bg-orange-200 rounded-full px-4 py-1 mr-2 text-blue-400 font-bold text-2xl hover:bg-blue-900">
+                            Nuestros Servicios Incluyen:</ul>
+                        <p class="mt-4"></p>
+                        <li class="font-semibold font-serif text-lg ">Reparación de grifos con fugas.</li>
+                        <li class="font-semibold font-serif text-lg ">Sustitución de piezas defectuosas.</li>
+                        <li class="font-semibold font-serif text-lg ">Solución a problemas de baja presión de agua.</li>
+                        <li class="font-semibold font-serif text-lg ">Ajuste y mantenimiento preventivo.</li>
+                        <li class="font-semibold font-serif text-lg ">Instalación de grifos nuevos y modernos.</li>
+
+
+
+
+                        </p>
+
+                        <a href="#"
+                            class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400">
+                            Cotiza ahora!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+                <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+                    <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+                        <img alt="" src="/src/IMG/desagues-plomeria.jpg"
+                            class="absolute inset-0 h-full w-full object-cover" />
+                    </div>
+
+                    <div class="lg:py-24">
+                        <h2 class="text-3xl font-bold sm:text-4xl text-gray-600"> Servicio Profesional de Reparación de Desagües</h2>
+
+                        <p class="mt-4 text-gray-600">
+                        <ul
+                            class="bg-orange-200 rounded-full px-4 py-1 mr-2 text-blue-400 font-bold text-2xl hover:bg-blue-900">
+                            Nuestros Servicios Incluyen:</ul>
+                        <p class="mt-4"></p>
+                        <li class="font-semibold font-serif text-lg ">Limpieza y desobstrucción de desagües: Eliminamos
+                            cualquier tipo de bloqueo que pueda estar
+                            afectando el flujo del agua.</li>
+                        <li class="font-semibold font-serif text-lg ">Detección y reparación de fugas: Identificamos y
+                            reparamos fugas en tuberías para evitar
+                            daños
+                            mayores.</li>
+                        <li class="font-semibold font-serif text-lg ">Mantenimiento preventivo: Realizamos revisiones
+                            periódicas para mantener tus desagües en
+                            óptimas
+                            condiciones.</li>
+                        <li class="font-semibold font-serif text-lg ">Reemplazo de tuberías: Sustituimos las tuberías
+                            dañadas por materiales de alta calidad para
+                            una
+                            mayor durabilidad.</li>
+                        <li class="font-semibold font-serif text-lg ">Servicios de emergencia: Atención rápida y
+                            eficiente para solucionar problemas urgentes,
+                            disponible las 24 horas del día, los 7 días de la semana.</li>
+
+
+
+
+
+                        </p>
+
+                        <a href="#"
+                            class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400">
+                            Cotiza ahora!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+                <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+                    <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+                        <img alt="" src="/src/IMG/calentador-plomeria.jpg"
+                            class="absolute inset-0 h-full w-full object-cover" />
+                    </div>
+
+                    <div class="lg:py-24">
+
+                        <h2 class="text-3xl font-bold sm:text-4xl text-gray-600">Servicio de Reparación de Calentadores De Agua</h2>
+
+                        <p class="mt-4 text-gray-600"></p>
+                        <ul
+                            class="bg-orange-200 rounded-full px-4 py-1 mr-2 text-blue-400 font-bold text-2xl hover:bg-blue-900">
+                            Nuestros Servicios Incluyen:</ul>
+                        <p class="mt-4"></p>
+                        <li class="font-semibold font-serif text-lg ">Diagnóstico y solución de problemas.</li>
+                        <li class="font-semibold font-serif text-lg ">Reparación de termostatos y válvulas de control.
+                        </li>
+                        <li class="font-semibold font-serif text-lg ">Sustitución de elementos de calentamiento.</li>
+                        <li class="font-semibold font-serif text-lg ">Reparación de fugas y ajuste de presión.</li>
+                        <li class="font-semibold font-serif text-lg ">Mantenimiento preventivo y limpieza del tanque.
+                        </li>
+
+
+                        <a href="#"
+                            class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400">
+                            Cotiza ahora!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer p-10 bg-base-300 ">
+        <div class="grid_3">
+            <section id="text-2" class="widget widget_text">
+                <div class="textwidget object-contain w-16 h-16"><img src="/src/IMG/logoINSYpeque.jpg"
+                        atl="Hogar Reparación" title="Hogar Reparación"></div>
+            </section>
+
+
+            <div class="grid_3">
+                <section id="text-5" class="widget widget_text">
+                    <h3 class="encabezadofooter font-bold">Servicios de Reparación</h3>
+                    <div class="textwidget">
+                        <address>
+                            <ul class="address">
+                                <li>Gestionamos todo el proceso de asistencia y reparación de su comunidad y hogar.
+                                </li>
+                                <li>Confíe en nosotros, tenemos vocación por hacerle la vida más fácil a nuestros
+                                    clientes.</li>
+                            </ul>
+                        </address>
+                    </div>
+                </section>
+            </div>
+            <div class="grid_3">
+                <section id="text-4" class="widget widget_text">
+                    <h3 class="encabezadofooter font-bold">CONTACTO</h3>
+                    <div class="textwidget">
+                        <address>
+                            <ul class="phone">
+                                <li>Teléfono: (+57) 300 280 5724</li>
+                                <li></li>
+                            </ul>
+                            <ul class="email">
+                                <li>reparaciones@InsyHogar.com</li>
+                            </ul>
+                        </address>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="grid_3">
+            <section id="text-3" class="widget widget_text">
+                <h3 class="encabezadofooter font-bold">Descarga nuestra app</h3>
+                <div class="textwidget">
+                    <p><a title="Descargar Hogar Reparación IOS"
+                            onclick="_gaq.push(['_trackEvent', 'Descargas', 'Descargaappstore', 'botonverdehome','1' ])"
+                            href="https://itunes.apple.com/es/app/hogar-reparacion/id625286808?mt=8" target="blank"><img
+                                alt=""
+                                src="http://www.hogarreparacion.com/wp-content/uploads/2013/08/hogar-reparacion-app-ios.png"
+                                width="154" height="56"></a><br> <a title="Descargar Hogar Reparación ANDROID"
+                            onclick="_gaq.push(['_trackEvent', 'Descargas', 'Descargaandroid', 'botonverdehome','1' ])"
+                            href="https://play.google.com/store/apps/details?id=de.Rocky.Android.Hogar"
+                            target="blank"><img alt=""
+                                src="http://www.hogarreparacion.com/wp-content/uploads/2013/08/hogar-reparacion-app-android.png"
+                                width="154" height="56"></a></p>
+                </div>
+            </section>
+        </div>
+
+        <nav>
+            <p class="mt-4 text-gray-600"></p>
+            <h6 class="footer-title font-bold ">Social</h6>
+            <font></font>
+            <div class="grid grid-flow-col gap-4">
+                <button>
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current hover:bg-red-900">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                            </path>
+                        </svg></a>
+                    <font></font>
+                </button>
+                <button class=>
+                    <a><svg xmlns="https://www.facebook.com/insyhogar?mibextid=ZbWKwL" width="24" height="24"
+                            viewBox="0 0 24 24" class="fill-current hover:bg-blue-900">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                            </path>
+                        </svg></a>
+                    <font></font>
+                </button>
+            </div>
+            <font></font>
+        </nav>
+        <font></font>
+    </footer>
+</body>
+
+</html>

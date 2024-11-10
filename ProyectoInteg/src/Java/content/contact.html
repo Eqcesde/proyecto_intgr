@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <style>
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        .whatsapp-button i {
+            font-size: 30px;
+        }
+    </style>
+
+    <meta chartset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="src/js/kitwind.config.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Estilos opcionales para el formulario */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <header>
+
+        <script src="script.js"></script>
+
+        <nav class="z-20 py-2 relative bg-white shadow dark:bg-gray-800 ">
+            <div class="container  mx-auto  flex px-8 xl:px-0">
+                <div class=" flex flex-grow  lg:w-auto lh:h-auto max-w-24 items-center "> <!--item center-->
+                    <img class="items-center sm md lg xl 2xl" src="/src/IMG/logoINSYpeque.jpg" alt="Logo">
+                </div>
+
+                <div class="flex lg:hidden justify-end w-full items-center " onclick=openMenu();>
+                    <a href="#" class="px-1 py-1   text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-
+                            4 ease-in-out ml-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" onclick="openMenu();" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div id="menu"
+                    class=" lg:flex hidden flex-grow justify-between absolute lg:relative top-full left-0 w-full py-1 px-8  z-10  lg:top-0  justify-items-cente ">
+                    <div class="flex flex-col lg:flex-row md:flex-row mb-4 lg:mb-0 mt-4 mx-auto">
+                        <a href="/index.html" class="font-bold uppercase pb-2 mb-2 px-3 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-
+                            4 ease-in-out mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center ">Inicio</a>
+                        <a href="/src/content/acercade.html" class="font-bold uppercase pb-2 mb-2 px-3 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-
+                            4 ease-in-out mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center ">Sobre Nosotros</a>
+
+                        
+                        <a href="/src/content/registrate.html"
+                            class="font-bold uppercase pb-2 mb-2 px-2.5 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-4 ease-in-out  mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center">Regístrate</a>
+                    </div>
+                </div>
+
+                <button id="search-button"
+                    class="  text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none focus:ring">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-4.35-4.35M18.65 10.65a7 7 0 1 0-9.9 9.9 7 7 0 0 0 9.9-9.9z"></path>
+                    </svg>
+                </button>
+                <div id="search-container"
+                    class="search-container w-40 overflow-hidden flex items-center bg-white rounded transition-all duration-500 ease-in-out ml-2">
+                    <input type="search" name="search" id="search" placeholder="Busqueda"
+                        class="w-full border-none bg-transparent p-1 text-black outline-none placeholder-gray-500">
+                </div>
+
+            </div>
+
+
+            <script>
+                function openMenu() {
+                    let menu = document.getElementById('menu');
+
+                    if (menu.classList.contains('hidden')) {
+                        menu.classList.remove('hidden');
+                    } else {
+                        menu.classList.add('hidden');
+                    }
+                }
+            </script>
+
+            <script>
+                const searchButton = document.getElementById('search-button');
+                const searchContainer = document.getElementById('search-container');
+
+                searchButton.addEventListener('click', () => {
+                    searchContainer.classList.toggle('expanded');
+                    if (searchContainer.classList.contains('expanded')) {
+                        searchContainer.style.width = '100%';
+                        searchContainer.querySelector('input').focus();
+                    } else {
+                        searchContainer.style.width = '0';
+                    }
+                });
+            </script>
+
+            <script>
+                function openMenu() {
+                    var menu = document.getElementById('menu');
+                    menu.classList.toggle('hidden');
+                }
+            </script>
+    </header>
+
+
+
+
+    <main>
+        <div class="relative">
+            <img src="/src/IMG/logo-insy.jpg" class="absolute inset-0 object-cover w-full h-full m-0" alt="" />
+            <div class="relative bg-opacity-60 bg-deep-purple-accent-700">
+                <svg class="absolute inset-x-0 bottom-0 text-white" viewBox="0 0 1160 163">
+                    <path fill="currentColor"
+                        d="M-164 13L-104 39.7C-44 66 76 120 196 141C316 162 436 152 556 119.7C676 88 796 34 916 13C1036 -8 1156 2 1216 7.7L1276 13V162.5H1216C1156 162.5 1036 162.5 916 162.5C796 162.5 676 162.5 556 162.5C436 162.5 316 162.5 196 162.5C76 162.5 -44 162.5 -104 162.5H-164V13Z">
+                    </path>
+                </svg>
+                <div
+                    class="relative  py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-40">
+                    <div class="flex flex-col items-center justify-end xl:flex-row">
+                        <div class="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
+                            <h2
+                                class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-blue-900 sm:text-4xl sm:leading-none items-center ">
+                                INSYHOGAR <br class="hidden md:block" />
+                                SOBRE LA EMPRESA:
+                            </h2>
+                            <p class="max-w-xl mb-4 text-base text-blue-600 md:text-lg font-bold">
+                                Ofrecemos servicios profesionales que están orientados a bservar los cambios y
+                                movimientos en el
+                                mundo de la construccion y el mobiliario, para así ofrecer a nuestros clientes las
+                                últimas tendencias.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <div class="mx-auto sm:text-center lg:max-w-2xl">
+                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+
+                    <h2
+                        class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+                        <span class="relative inline-block">
+                            <svg viewBox="0 0 52 24" fill="currentColor"
+                                class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+                                <defs>
+                                    <pattern id="5dc90b42-5ed4-45a6-8e63-2d78ca9d3d95" x="0" y="0" width=".135"
+                                        height=".30">
+                                        <circle cx="1" cy="1" r=".7"></circle>
+                                    </pattern>
+                                </defs>
+                                <rect fill="url(#5dc90b42-5ed4-45a6-8e63-2d78ca9d3d95)" width="52" height="24"></rect>
+                            </svg>
+                            <span class="relative text-blue-800 p-10">CONTACTANOS</span>
+                        </span>
+
+                    </h2>
+
+                    <form action="mailto:tucorreo@dominio.com" method="post" enctype="text/plain">
+
+                        <span class="relative text-blue-800 relative inline-block  text-3xl"></span>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                        <input type="submit" value="Enviar">
+                    </form>
+
+                    <p class="text-base text-gray-700 md:text-lg p-10">
+                        ¿Necesitas ayuda con una reparación en tu hogar? ¡Estamos aquí para ayudarte! No dudes en
+                        ponerte en contacto con nosotros para programar una cita o para obtener más información sobre
+                        nuestros servicios.
+                    </p>
+                </div>
+                <div class="">
+                    <span class="relative text-blue-800 p-10 font-bold text-3xl">VISITANOS</span>
+                    <div id="map-container">
+                        <!-- Mapa incrustado -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.433343580398!2d-75.54779642564161!3d6.3378752252939385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f9923096f31%3A0x8c09b4696cee24de!2sTierragro%20Bello!5e0!3m2!1ses!2sco!4v1717193959667!5m2!1ses!2sco"
+                            width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <p class="max-w-xl mb-4 text-base text-gray-700 sm:mx-auto p-9">
+                    En <span class="text-blue-500 font-bold">INSYHOGAR,</span> estamos comprometidos a hacer que tu vida
+                    sea más fácil proporcionándote soluciones confiables y efectivas para tus necesidades de reparación
+                    en el hogar. Esperamos tener la oportunidad de servirte pronto.
+                </p>
+
+
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+    <footer class="footer p-10 bg-base-300 ">
+        <div class="grid_3">
+            <section id="text-2" class="widget widget_text">
+                <div class="textwidget object-contain w-16 h-16"><img src="/src/IMG/logoINSYpeque.jpg"
+                        atl="Hogar Reparación" title="Hogar Reparación"></div>
+            </section>
+
+
+            <div class="grid_3">
+                <section id="text-5" class="widget widget_text">
+                    <h3 class="encabezadofooter font-bold">Servicios de Reparación</h3>
+                    <div class="textwidget">
+                        <address>
+                            <ul class="address">
+                                <li>Gestionamos todo el proceso de asistencia y reparación de su comunidad y hogar.
+                                </li>
+                                <li>Confíe en nosotros, tenemos vocación por hacerle la vida más fácil a nuestros
+                                    clientes.</li>
+                            </ul>
+                        </address>
+                    </div>
+                </section>
+            </div>
+            <div class="grid_3">
+                <section id="text-4" class="widget widget_text">
+                    <h3 class="encabezadofooter font-bold">CONTACTO</h3>
+                    <div class="textwidget">
+                        <address>
+                            <ul class="phone">
+                                <li>Teléfono: (+57) 300 280 5724</li>
+                                <li></li>
+                            </ul>
+                            <ul class="email">
+                                <li>reparaciones@InsyHogar.com</li>
+                            </ul>
+                        </address>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="grid_3">
+            <section id="text-3" class="widget widget_text">
+                <h3 class="encabezadofooter font-bold">Descarga nuestra app</h3>
+                <div class="textwidget">
+                    <p><a title="Descargar Hogar Reparación IOS"
+                            onclick="_gaq.push(['_trackEvent', 'Descargas', 'Descargaappstore', 'botonverdehome','1' ])"
+                            href="https://itunes.apple.com/es/app/hogar-reparacion/id625286808?mt=8" target="blank"><img
+                                alt=""
+                                src="http://www.hogarreparacion.com/wp-content/uploads/2013/08/hogar-reparacion-app-ios.png"
+                                width="154" height="56"></a><br> <a title="Descargar Hogar Reparación ANDROID"
+                            onclick="_gaq.push(['_trackEvent', 'Descargas', 'Descargaandroid', 'botonverdehome','1' ])"
+                            href="https://play.google.com/store/apps/details?id=de.Rocky.Android.Hogar"
+                            target="blank"><img alt=""
+                                src="http://www.hogarreparacion.com/wp-content/uploads/2013/08/hogar-reparacion-app-android.png"
+                                width="154" height="56"></a></p>
+                </div>
+            </section>
+        </div>
+
+        <nav>
+            <p class="mt-4 text-gray-600"></p>
+            <h6 class="footer-title font-bold ">Social</h6>
+            <font></font>
+            <div class="grid grid-flow-col gap-4">
+                <button>
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current hover:bg-red-900">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                            </path>
+                        </svg></a>
+                    <font></font>
+                </button>
+                <button class=>
+                    <a><svg xmlns="https://www.facebook.com/insyhogar?mibextid=ZbWKwL" width="24" height="24"
+                            viewBox="0 0 24 24" class="fill-current hover:bg-blue-900">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                            </path>
+                        </svg></a>
+                    <font></font>
+                </button>
+            </div>
+            <font></font>
+        </nav>
+        <font></font>
+    </footer>
+</body>
+
+</html>
