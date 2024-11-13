@@ -1,0 +1,21 @@
+.search-container {
+    transition: width 0.5s ease-in-out;
+}
+
+.expanded {
+    width: 100px;
+}
+#menu {
+    top: 100%;
+    /* Asegura que el menú esté justo debajo del header */
+}
+.custom-img {
+    width: 80%;
+    /* Ajusta el ancho como prefieras */
+    height: auto;
+    /* Mantiene la proporción de aspecto */
+    max-height: 500px;
+    /* Ajusta la altura máxima */
+    margin: auto;
+    /* Centra la imagen dentro del contenedor */
+}
