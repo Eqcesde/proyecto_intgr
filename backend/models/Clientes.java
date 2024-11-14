@@ -15,22 +15,22 @@ public class Clientes{
     }
 
     public String getClienteId(){
-        this.clienteId = clienteId;
+        return clienteId;
     }
     public String  getNombreCliente(){
-        this.nombreCliente = nombreCliente;
+        return nombreCliente;
     }
     public int getEdad (){
-        this.edad = edad;
+        return edad;
     }
     public String getCorreo(){
-        this.correo=correo;
+        return correo;
     }
     public String getDireccion(){
-        this.direccion = direccion;
+        return direccion;
     }
     public String getTelefono(){
-        this.telefono = telefono;
+        return telefono;
     }
 
     public void setTelefono(int telefono){
