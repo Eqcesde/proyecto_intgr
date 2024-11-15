@@ -1,15 +1,25 @@
 public class Servicios {
-    private int servicio_id;
-    private String nombre_Servicio;
-    
-    public Servicios(String servicio_id, String nombre_Servicio){
-        this.servicio_id = servicio_id;
-        this.nombre_Servicio = servicio;
+    private int servicioId;
+    private String nombreServicio;
+
+    public Servicios(int servicioid, String nombreServicio) {
+        this.servicioId = servicioid;
+        this.nombreServicio = nombreServicio;
 
     }
 
-    public static void main (String[] args){
-        Servicios servicios = new servicios(01,"carpintería");
-        System.out.println("Nombre del servicio:" + servicio.getservicio());
+    public int getServicioId() {
+        return servicioId;
+    }
+
+    public String getNombreServicio() {
+        return nombreServicio;
+    }
+
+    public static void main(String[] args) {
+        Servicios servicios = new Servicios(01, "carpintería");
+
+        System.out.println("Identidad Del Servicio" + servicios.getServicioId());
+        System.out.println("Nombre del servicio:" + servicios.getNombreServicio());
     }
 }

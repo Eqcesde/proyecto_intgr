@@ -1,16 +1,20 @@
+import java.util.Date;
+
 public class Materiales {
-    private int material_Id;
-    private int proveedor_id;
+    private int materialId;
+    private int proveedorId;
     private String nombreMaterial;
     private String tipoMaterial;
     private int cantidadStock;
     private double precioUnitario;
-    private localDate fechaAdquisicion;
+    private Date fechaAdquisicion;
     private String estado;
 
-    public Materiales (int material_Id, int proveedor_id, String nombreMaterial, String tipoMaterial, String cantidadStock, double precioUnitario, String tipoMaterial, int fechaAdquisicion, String estado){
-        this.material_Id = material_Id;
-        this.proveedor_id = proveedor_id;
+    // Constructor
+    public Materiales(int materialId, int proveedorId, String nombreMaterial, String tipoMaterial, int cantidadStock, 
+                      double precioUnitario, Date fechaAdquisicion, String estado) {
+        this.materialId = materialId;
+        this.proveedorId = proveedorId;
         this.nombreMaterial = nombreMaterial;
         this.tipoMaterial = tipoMaterial;
         this.cantidadStock = cantidadStock;
@@ -19,35 +23,49 @@ public class Materiales {
         this.estado = estado;
     }
 
-    public String getMaterial_Id(){
-        return material_Id;
+    // Getters
+    public int getMaterialId() {
+        return materialId;
     }
-    public String getProveedor_id(){
-        return proveedor_id;
+
+    public int getProveedorId() {
+        return proveedorId;
     }
-    public String getNombreMaterial(){
+
+    public String getNombreMaterial() {
         return nombreMaterial;
     }
-    public String getTipoMaterial(){
+
+    public String getTipoMaterial() {
         return tipoMaterial;
     }
-    public int getCantidadStock(){
+
+    public int getCantidadStock() {
         return cantidadStock;
     }
-    public int getPrecioUnitario(){
+
+    public double getPrecioUnitario() {
         return precioUnitario;
     }
-    public int getFechaAdquisición(){
+
+    public Date getFechaAdquisicion() {
         return fechaAdquisicion;
     }
-    public String getEstado(){
+
+    public String getEstado() {
         return estado;
     }
 
-    public static void (String[] args){
-        Materiales materiales = new materiales ("gfdgf");
-        System.out.println("Materiales:" get.nombreMaterial());
-        System.out.println("cantidad en Stock= " get.cantidadStock()); //y así sucesivamente
+    public static void main(String[] args) {
+        Date fechaAdquisicion = new Date(11111991); 
 
+        Materiales materiales = new Materiales(1, 101, "Cedro", "Madera", 100, 250000, fechaAdquisicion, "Entregado");
+
+        System.out.println("Material: " + materiales.getNombreMaterial());
+        System.out.println("Cantidad en stock: " + materiales.getCantidadStock());
+        System.out.println("Tipo de material: " + materiales.getTipoMaterial());
+        System.out.println("Precio unitario: " + materiales.getPrecioUnitario());
+        System.out.println("Fecha de Adquisicion" + materiales.getFechaAdquisicion());
+        System.out.println("Estado: " + materiales.getEstado());
     }
 }
