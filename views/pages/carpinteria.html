@@ -24,52 +24,25 @@
             font-size: 30px;
         }
     </style>
+   
 
     <meta chartset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CARPINTERIA</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="src/js/kitwind.config.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
 
-    <style>
-        .search-container {
-            transition: width 0.5s ease-in-out;
-        }
 
-        .expanded {
-            width: 100px;
-        }
-    </style>
 
-    <style>
-        #menu {
-            top: 100%;
-            /* Asegura que el menú esté justo debajo del header */
-        }
-    </style>
-
-    <style>
-        .custom-img {
-            width: 80%;
-            /* Ajusta el ancho como prefieras */
-            height: auto;
-            /* Mantiene la proporción de aspecto */
-            max-height: 500px;
-            /* Ajusta la altura máxima */
-            margin: auto;
-            /* Centra la imagen dentro del contenedor */
-        }
-    </style>
 
 
 
@@ -79,7 +52,7 @@
 <body>
     <header>
 
-        <script src="script.js"></script>
+
 
         <nav class="z-20 py-2 relative bg-white shadow dark:bg-gray-800 ">
             <div class="container  mx-auto  flex px-8 xl:px-0">
@@ -130,39 +103,7 @@
             </div>
 
 
-            <script>
-                function openMenu() {
-                    let menu = document.getElementById('menu');
 
-                    if (menu.classList.contains('hidden')) {
-                        menu.classList.remove('hidden');
-                    } else {
-                        menu.classList.add('hidden');
-                    }
-                }
-            </script>
-
-            <script>
-                const searchButton = document.getElementById('search-button');
-                const searchContainer = document.getElementById('search-container');
-
-                searchButton.addEventListener('click', () => {
-                    searchContainer.classList.toggle('expanded');
-                    if (searchContainer.classList.contains('expanded')) {
-                        searchContainer.style.width = '100%';
-                        searchContainer.querySelector('input').focus();
-                    } else {
-                        searchContainer.style.width = '0';
-                    }
-                });
-            </script>
-
-            <script>
-                function openMenu() {
-                    var menu = document.getElementById('menu');
-                    menu.classList.toggle('hidden');
-                }
-            </script>
     </header>
 
 
@@ -188,15 +129,15 @@
                             Nuestros Servicios Incluyen:</ul>
                         <p class="mt-4"></p>
                         <li class="font-semibold font-serif text-lg ">Reparación
-                                de: sillas, mesas, escritorios y otros muebles de madera</li>
-                                <li class="font-semibold font-serif text-lg ">Restauración de
-                             muebles antiguos y vintage</li>
-                             <li class="font-semibold font-serif text-lg ">Ajustes y
+                            de: sillas, mesas, escritorios y otros muebles de madera</li>
+                        <li class="font-semibold font-serif text-lg ">Restauración de
+                            muebles antiguos y vintage</li>
+                        <li class="font-semibold font-serif text-lg ">Ajustes y
                             refuerzos estructurales</li>
-                            <li class="font-semibold font-serif text-lg ">Reemplazo
-                                de piezas dañadas o faltantes</li>
-                                <li class="font-semibold font-serif text-lg ">Soluciones a
-                                medida para cualquier tipo de proyecto de carpintería</li>
+                        <li class="font-semibold font-serif text-lg ">Reemplazo
+                            de piezas dañadas o faltantes</li>
+                        <li class="font-semibold font-serif text-lg ">Soluciones a
+                            medida para cualquier tipo de proyecto de carpintería</li>
 
                         </p>
 
@@ -227,23 +168,23 @@
                             Nuestros Servicios Incluyen:</ul>
                         <p class="mt-4"></p>
                         <li class="font-semibold font-serif text-lg ">Diseño de Estructuras
-                                de Madera desde pérgolas y
+                            de Madera desde pérgolas y
                             terrazas hasta escaleras y muebles a
                             medida, nuestros diseños están pensados para realzar cualquier espacio.</li>
-                            <li class="font-semibold font-serif text-lg ">Consultoría y
-                                Asesoramiento, trabajamos estrechamente
+                        <li class="font-semibold font-serif text-lg ">Consultoría y
+                            Asesoramiento, trabajamos estrechamente
                             con nuestros clientes para entender
                             sus necesidades y proporcionar soluciones innovadoras y prácticas.</li>
-                            <li class="font-semibold font-serif text-lg ">Planos
-                                Detallados, proveemos planos técnicos detallados que aseguran una construcción
+                        <li class="font-semibold font-serif text-lg ">Planos
+                            Detallados, proveemos planos técnicos detallados que aseguran una construcción
                             precisa y eficiente.
                         </li>
                         <li class="font-semibold font-serif text-lg ">Selección de
-                                Materiales, ofrecemos orientación en
+                            Materiales, ofrecemos orientación en
                             la selección de los mejores materiales
                             para cada proyecto, asegurando la combinación perfecta de estética y resistencia.</li>
-                            <li class="font-semibold font-serif text-lg ">Visualización
-                                3D, Utilizamos tecnologías avanzadas para crear modelos en 3D que permiten a
+                        <li class="font-semibold font-serif text-lg ">Visualización
+                            3D, Utilizamos tecnologías avanzadas para crear modelos en 3D que permiten a
                             nuestros clientes visualizar el resultado final antes de comenzar la construcción.
                         </li>
 
@@ -280,19 +221,19 @@
                             Nuestros Servicios Incluyen:</ul>
                         <p class="mt-4"></p>
                         <li class="font-semibold font-serif text-lg ">Muebles
-                                Personalizados, desde mesas y sillas hasta estanterías y armarios, diseñamos y
+                            Personalizados, desde mesas y sillas hasta estanterías y armarios, diseñamos y
                             fabricamos muebles que se adaptan perfectamente a tu espacio y estilo.</li>
-                            <li class="font-semibold font-serif text-lg ">Proyectos de
-                                Interiorismo, colaboramos contigo para crear ambientes acogedores y
+                        <li class="font-semibold font-serif text-lg ">Proyectos de
+                            Interiorismo, colaboramos contigo para crear ambientes acogedores y
                             funcionales, aportando soluciones creativas y prácticas.</li>
-                            <li class="font-semibold font-serif text-lg ">Carpintería
-                                Residencial y Comercial, ofrecemos servicios tanto para el hogar como para
+                        <li class="font-semibold font-serif text-lg ">Carpintería
+                            Residencial y Comercial, ofrecemos servicios tanto para el hogar como para
                             negocios, desde pequeños arreglos hasta grandes proyectos.</li>
-                            <li class="font-semibold font-serif text-lg ">Reparaciones y
-                                Restauraciones, devolvemos la vida a tus muebles y estructuras de madera
+                        <li class="font-semibold font-serif text-lg ">Reparaciones y
+                            Restauraciones, devolvemos la vida a tus muebles y estructuras de madera
                             antiguas con nuestras técnicas de restauración expertas.</li>
-                            <li class="font-semibold font-serif text-lg ">Accesorios y
-                                Decoraciones, diseñamos y fabricamos una variedad de objetos decorativos y
+                        <li class="font-semibold font-serif text-lg ">Accesorios y
+                            Decoraciones, diseñamos y fabricamos una variedad de objetos decorativos y
                             funcionales, como marcos, estantes flotantes, y más.</li>
 
 
@@ -354,24 +295,7 @@
                 </section>
             </div>
         </div>
-        <div class="grid_3">
-            <section id="text-3" class="widget widget_text">
-                <h3 class="encabezadofooter font-bold">Descarga nuestra app</h3>
-                <div class="textwidget">
-                    <p><a title="Descargar Hogar Reparación IOS"
-                            onclick="_gaq.push(['_trackEvent', 'Descargas', 'Descargaappstore', 'botonverdehome','1' ])"
-                            href="https://itunes.apple.com/es/app/hogar-reparacion/id625286808?mt=8" target="blank"><img
-                                alt=""
-                                src="http://www.hogarreparacion.com/wp-content/uploads/2013/08/hogar-reparacion-app-ios.png"
-                                width="154" height="56"></a><br> <a title="Descargar Hogar Reparación ANDROID"
-                            onclick="_gaq.push(['_trackEvent', 'Descargas', 'Descargaandroid', 'botonverdehome','1' ])"
-                            href="https://play.google.com/store/apps/details?id=de.Rocky.Android.Hogar"
-                            target="blank"><img alt=""
-                                src="http://www.hogarreparacion.com/wp-content/uploads/2013/08/hogar-reparacion-app-android.png"
-                                width="154" height="56"></a></p>
-                </div>
-            </section>
-        </div>
+        
 
         <nav>
             <p class="mt-4 text-gray-600"></p>
@@ -399,8 +323,42 @@
             </div>
             <font></font>
         </nav>
-        <font></font>
+
     </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/kitwind,config.js"></script>
+    <script src="/js/script.js"></script>
+
+    <script>
+        function openMenu() {
+            let menu = document.getElementById('menu');
+
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        }
+
+        const searchButton = document.getElementById('search-button');
+        const searchContainer = document.getElementById('search-container');
+
+        searchButton.addEventListener('click', () => {
+            searchContainer.classList.toggle('expanded');
+            if (searchContainer.classList.contains('expanded')) {
+                searchContainer.style.width = '100%';
+                searchContainer.querySelector('input').focus();
+            } else {
+                searchContainer.style.width = '0';
+            }
+        });
+
+        function openMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
 
 </body>
 

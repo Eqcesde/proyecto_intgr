@@ -19,7 +19,7 @@ public class Servicios {
     public static void main(String[] args) {
         Servicios servicios = new Servicios(01, "carpintería");
 
-        System.out.println("Identidad Del Servicio" + servicios.getServicioId());
-        System.out.println("Nombre del servicio:" + servicios.getNombreServicio());
+        System.out.println("Identidad Del Servicio" + " " + servicios.getServicioId());
+        System.out.println("Nombre del servicio:" + " " + servicios.getNombreServicio());
     }
 }
