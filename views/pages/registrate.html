@@ -47,12 +47,8 @@
 
 </head>
 
-
 <body>
     <header>
-
-        <script src="script.js"></script>
-
         <nav class="z-20 py-2 relative bg-white shadow dark:bg-gray-800 ">
             <div class="container  mx-auto  flex px-8 xl:px-0">
                 <div class=" flex flex-grow  lg:w-auto lh:h-auto max-w-24 items-center "> <!--item center-->
@@ -81,7 +77,6 @@
 
                         <a href="/src/content/contact.html"
                             class="font-bold uppercase pb-2 mb-2 px-2.5 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-4 ease-in-out  mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center">Contáctanos</a>
-                      
                     </div>
                 </div>
 
@@ -100,41 +95,7 @@
                 </div>
 
             </div>
-
-
-            <script>
-                function openMenu() {
-                    let menu = document.getElementById('menu');
-
-                    if (menu.classList.contains('hidden')) {
-                        menu.classList.remove('hidden');
-                    } else {
-                        menu.classList.add('hidden');
-                    }
-                }
-            </script>
-
-            <script>
-                const searchButton = document.getElementById('search-button');
-                const searchContainer = document.getElementById('search-container');
-
-                searchButton.addEventListener('click', () => {
-                    searchContainer.classList.toggle('expanded');
-                    if (searchContainer.classList.contains('expanded')) {
-                        searchContainer.style.width = '100%';
-                        searchContainer.querySelector('input').focus();
-                    } else {
-                        searchContainer.style.width = '0';
-                    }
-                });
-            </script>
-
-            <script>
-                function openMenu() {
-                    var menu = document.getElementById('menu');
-                    menu.classList.toggle('hidden');
-                }
-            </script>
+               
     </header>
 
     <main>
@@ -164,12 +125,12 @@
                         <button
                             class="bg-[#0D45A2] rounded-xl text-white py-2 hover:scale-110 duration-700">REGISTRATE</button>
                     </form>
-
                     <div class="mt-10 grid grid-cols-3 items-center text-gray-500">
                         <hr class="border-gray-900">
                         <p class="text-center text-sm">OR</p>
                         <hr class="border-gray-900">
                     </div>
+                    
 
                     <button
                         class="bg-white border py-1 w-full rounded-xl mt-3 flex justify-center items-center hover:scale-110 duration-700">
@@ -195,7 +156,6 @@
                         <button
                             class="py-2 px-4 bg-blue-200 border rounded-xl hover:scale-110 duration-700">REGISTRATE</button>
                     </div>
-
                 </div>
 
                 <!--imagen-->
@@ -293,6 +253,41 @@
         </nav>
         <font></font>
     </footer>
+
+
+    <script src="script.js"></script>
+    <script type="module" src="/js/validator.js">
+
+         function openMenu() {
+                    let menu = document.getElementById('menu');
+
+                    if (menu.classList.contains('hidden')) {
+                        menu.classList.remove('hidden');
+                    } else {
+                        menu.classList.add('hidden');
+                    }
+                }
+
+                const searchButton = document.getElementById('search-button');
+                const searchContainer = document.getElementById('search-container');
+
+                searchButton.addEventListener('click', () => {
+                    searchContainer.classList.toggle('expanded');
+                    if (searchContainer.classList.contains('expanded')) {
+                        searchContainer.style.width = '100%';
+                        searchContainer.querySelector('input').focus();
+                    } else {
+                        searchContainer.style.width = '0';
+                    }
+                });
+
+                function openMenu() {
+                    var menu = document.getElementById('menu');
+                    menu.classList.toggle('hidden');
+                }
+    
+    </script>
+
 
 </body>
 
