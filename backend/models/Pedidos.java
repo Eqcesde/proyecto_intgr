@@ -45,11 +45,11 @@ public class Pedidos {
 
         Pedidos pedidos = new Pedidos(1, 01, fechaPedidios, fechaEntrega, "Entregado");
 
-        System.out.println("El ID del Pedido Es: " + pedidos.getPedido_id());
-        System.out.println("El Id del Cliente Es: " + pedidos.getPedido_id());
-        System.out.println("La Fecha del Pedido Es: "+ pedidos.getFechaPedido());
-        System.out.println("La Fecha de Entrega Es: " + pedidos.getFechaEntrega());
-        System.out.println("El Estado Del Pedido Es; " + pedidos.getEstado());
+        System.out.println("El ID del Pedido Es: " + " " + pedidos.getPedido_id());
+        System.out.println("El Id del Cliente Es: " + " " + pedidos.getPedido_id());
+        System.out.println("La Fecha del Pedido Es: " + " " + pedidos.getFechaPedido());
+        System.out.println("La Fecha de Entrega Es: " + " " + pedidos.getFechaEntrega());
+        System.out.println("El Estado Del Pedido Es; " + " " + pedidos.getEstado());
     }
 
 }

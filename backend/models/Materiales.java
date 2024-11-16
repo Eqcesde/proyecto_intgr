@@ -61,11 +61,11 @@ public class Materiales {
 
         Materiales materiales = new Materiales(1, 101, "Cedro", "Madera", 100, 250000, fechaAdquisicion, "Entregado");
 
-        System.out.println("Material: " + materiales.getNombreMaterial());
-        System.out.println("Cantidad en stock: " + materiales.getCantidadStock());
-        System.out.println("Tipo de material: " + materiales.getTipoMaterial());
-        System.out.println("Precio unitario: " + materiales.getPrecioUnitario());
-        System.out.println("Fecha de Adquisicion" + materiales.getFechaAdquisicion());
-        System.out.println("Estado: " + materiales.getEstado());
+        System.out.println("Material:" + " " + materiales.getNombreMaterial());
+        System.out.println("Cantidad en stock:" + " " + materiales.getCantidadStock());
+        System.out.println("Tipo de material:" + " " + materiales.getTipoMaterial());
+        System.out.println("Precio unitario:" + " " + materiales.getPrecioUnitario());
+        System.out.println("Fecha de Adquisicion" + " " + materiales.getFechaAdquisicion());
+        System.out.println("Estado:" + " " + materiales.getEstado());
     }
 }

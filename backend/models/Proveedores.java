@@ -44,10 +44,10 @@ public class Proveedores {
         public static void Main(String[] args){
             Proveedores proveedor = new Proveedores("001", "Proveedor 1", 1234567890, "Calle Falsa 123", "proveedor1@correo.com");
 
-            System.out.println("Identidad del Proveedor: " + proveedor.getProveedor_id());
-            System.out.println("Nombre del proveedor: " + proveedor.getNombre_proveedor());
-            System.out.println("Telefono Proveedor: " + proveedor.getTelefono());
-            System.out.println("Direccion del Proveedor: " + proveedor.getDireccion());
-            System.out.println("Correo del Proveedor: " + proveedor.getCorreo());
+            System.out.println("Identidad del Proveedor: " + " " + proveedor.getProveedor_id());
+            System.out.println("Nombre del proveedor: " + " " + proveedor.getNombre_proveedor());
+            System.out.println("Telefono Proveedor: " + " " + proveedor.getTelefono());
+            System.out.println("Direccion del Proveedor: " + " " + proveedor.getDireccion());
+            System.out.println("Correo del Proveedor: " + " " + proveedor.getCorreo());
         }
     }

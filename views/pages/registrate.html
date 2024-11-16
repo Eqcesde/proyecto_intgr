@@ -4,12 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="src/js/kitwind.config.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/views/css/style.css">
+
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -51,8 +47,6 @@
 <body>
     <header>
 
-        <script src="script.js"></script>
-
         <nav class="z-20 py-2 relative bg-white shadow dark:bg-gray-800 ">
             <div class="container  mx-auto  flex px-8 xl:px-0">
                 <div class=" flex flex-grow  lg:w-auto lh:h-auto max-w-24 items-center "> <!--item center-->
@@ -81,7 +75,7 @@
 
                         <a href="/src/content/contact.html"
                             class="font-bold uppercase pb-2 mb-2 px-2.5 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-4 ease-in-out  mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center">Contáctanos</a>
-                      
+
                     </div>
                 </div>
 
@@ -102,39 +96,7 @@
             </div>
 
 
-            <script>
-                function openMenu() {
-                    let menu = document.getElementById('menu');
-
-                    if (menu.classList.contains('hidden')) {
-                        menu.classList.remove('hidden');
-                    } else {
-                        menu.classList.add('hidden');
-                    }
-                }
-            </script>
-
-            <script>
-                const searchButton = document.getElementById('search-button');
-                const searchContainer = document.getElementById('search-container');
-
-                searchButton.addEventListener('click', () => {
-                    searchContainer.classList.toggle('expanded');
-                    if (searchContainer.classList.contains('expanded')) {
-                        searchContainer.style.width = '100%';
-                        searchContainer.querySelector('input').focus();
-                    } else {
-                        searchContainer.style.width = '0';
-                    }
-                });
-            </script>
-
-            <script>
-                function openMenu() {
-                    var menu = document.getElementById('menu');
-                    menu.classList.toggle('hidden');
-                }
-            </script>
+           
     </header>
 
     <main>
@@ -246,24 +208,7 @@
                 </section>
             </div>
         </div>
-        <div class="grid_3">
-            <section id="text-3" class="widget widget_text">
-                <h3 class="encabezadofooter font-bold">Descarga nuestra app</h3>
-                <div class="textwidget">
-                    <p><a title="Descargar Hogar Reparación IOS"
-                            onclick="_gaq.push(['_trackEvent', 'Descargas', 'Descargaappstore', 'botonverdehome','1' ])"
-                            href="https://itunes.apple.com/es/app/hogar-reparacion/id625286808?mt=8" target="blank"><img
-                                alt=""
-                                src="http://www.hogarreparacion.com/wp-content/uploads/2013/08/hogar-reparacion-app-ios.png"
-                                width="154" height="56"></a><br> <a title="Descargar Hogar Reparación ANDROID"
-                            onclick="_gaq.push(['_trackEvent', 'Descargas', 'Descargaandroid', 'botonverdehome','1' ])"
-                            href="https://play.google.com/store/apps/details?id=de.Rocky.Android.Hogar"
-                            target="blank"><img alt=""
-                                src="http://www.hogarreparacion.com/wp-content/uploads/2013/08/hogar-reparacion-app-android.png"
-                                width="154" height="56"></a></p>
-                </div>
-            </section>
-        </div>
+       
 
         <nav>
             <p class="mt-4 text-gray-600"></p>
@@ -291,9 +236,46 @@
             </div>
             <font></font>
         </nav>
-        <font></font>
+
     </footer>
 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/kitwind,config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+    </script>
+    <script src="/js/script.js"></script>
+
+    <script>
+        function openMenu() {
+            let menu = document.getElementById('menu');
+
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        }
+   
+        const searchButton = document.getElementById('search-button');
+        const searchContainer = document.getElementById('search-container');
+
+        searchButton.addEventListener('click', () => {
+            searchContainer.classList.toggle('expanded');
+            if (searchContainer.classList.contains('expanded')) {
+                searchContainer.style.width = '100%';
+                searchContainer.querySelector('input').focus();
+            } else {
+                searchContainer.style.width = '0';
+            }
+        });
+   
+        function openMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
 </body>
 
 

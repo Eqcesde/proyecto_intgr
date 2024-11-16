@@ -40,12 +40,12 @@ public class Clientes{
     public static void main(String [] args){
         Clientes clientes = new Clientes ("01" , "pepito perez", 25, "pepitop@gmail.com", "Calle Cuerna Vaca 53", 4444444);
        
-        System.out.println("Id del cliente" + clientes.getClienteId());
-        System.out.println("Nombre del cliente: " + clientes.getNombreCliente());
-        System.out.println("Edad del cliente" + clientes.getEdad());
-        System.out.println("Correo del Cliente" + clientes.getCorreo());
-        System.out.println("Direccion del Cliente" + clientes.getDireccion());
-        System.out.println("Telefono del Cliente"+ clientes.getTelefono());
+        System.out.println("Id del cliente:" + " " + clientes.getClienteId());
+        System.out.println("Nombre del cliente:" + " " + clientes.getNombreCliente());
+        System.out.println("Edad del cliente:" + " " + clientes.getEdad());
+        System.out.println("Correo del Cliente:" + " " + clientes.getCorreo());
+        System.out.println("Direccion del Cliente:" + " " + clientes.getDireccion());
+        System.out.println("Telefono del Cliente:"+ " " + clientes.getTelefono());
 
 
     }
