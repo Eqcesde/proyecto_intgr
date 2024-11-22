@@ -14,12 +14,12 @@ public class Clientes{
         this.direccion = direccion;
         this.telefono = telefono;
     }
-
+    //GETTERS 
     public String getClienteId(){
         return clienteId;
     }
-    public String  getNombreCliente(){
-        return nombreCliente;
+    public String  getNombre(){
+        return nombre;
     }
     public int getEdad (){
         return edad;
@@ -34,6 +34,19 @@ public class Clientes{
         return telefono;
     }
 
+    //SETTERS   
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    public void setEdad(int edad){
+        this.edad = edad;
+    }
+    public void setCorreo(String correo){
+        this.correo = correo;
+    }
+    public void setDireccion(String direccion){
+        this.direccion = direccion;
+    }
     public void setTelefono(int telefono){
         this.telefono = telefono;
     }
