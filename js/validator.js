@@ -1,8 +1,5 @@
 import { enviar } from "../controllers/controllerContact.js";
-import {
-  registrar,
-  listarRegistros,
-} from "../controllers/controllerRegistrate.js";
+import { registrar } from "../controllers/controllerRegistrate.js";
 
 let contacto = document.getElementById("btnEnviar");
 if (contacto) {
