@@ -1,3 +1,16 @@
 import { enviar } from "../controllers/controllerContact.js";
+import {
+  registrar,
+  listarRegistros,
+} from "../controllers/controllerRegistrate.js";
 
-document.getElementById('btnEnviar').addEventListener('click', enviar)
+let contacto = document.getElementById("btnEnviar");
+if (contacto) {
+  contacto.addEventListener("click", enviar);
+}
+
+let registro = document.getElementById("btnRegistrar");
+if (registro) {
+  registro.addEventListener("click", registrar);
+}
+
