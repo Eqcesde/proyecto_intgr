@@ -1,5 +1,5 @@
+import { registrar} from "../controllers/controllerRegistrate.js";
 import { enviar } from "../controllers/controllerContact.js";
-import { registrar } from "../controllers/controllerRegistrate.js";
 
 let contacto = document.getElementById("btnEnviar");
 if (contacto) {
@@ -10,4 +10,13 @@ let registro = document.getElementById("btnRegistrar");
 if (registro) {
   registro.addEventListener("click", registrar);
 }
+
+
+
+
+
+
+
+
+
 

@@ -1,6 +1,6 @@
 export let registros = [
-  {
-    email: "correo@correo.com",
-    password: "12345",
-  },
+    {
+        email: "correo@correo.com",
+        password: "12345",
+    },
 ];

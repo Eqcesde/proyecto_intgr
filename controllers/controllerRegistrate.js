@@ -1,4 +1,4 @@
-import { registros } from "../models/modelRegistrate.js";
+import { registros} from "../models/modelRegistrate.js";
 
 export function registrar() {
   let email = document.getElementById("email").value;
