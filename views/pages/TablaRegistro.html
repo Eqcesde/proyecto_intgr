@@ -59,10 +59,79 @@
       </div>
     </nav>
   </header>
+<header>
+  <nav class="z-20 py-2 relative bg-white shadow dark:bg-gray-800">
+    <div class="container mx-auto flex px-8 xl:px-0">
+      <div class="flex flex-grow lg:w-auto lh:h-auto max-w-24 items-center">
+        <!--item center-->
+        <img class="items-center sm md lg xl 2xl" src="/views/IMG/logoINSYpeque.jpg" alt=Logo">
+      </div>
+
+      <div class="flex lg:hidden justify-end w-full items-center" onclick="openMenu();">
+        <a href="#"
+          class="px-1 py-1 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr- 4 ease-in-out ml-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              onclick="openMenu();" />
+          </svg>
+        </a>
+      </div>
+
+      <div id="menu"
+        class="lg:flex hidden flex-grow justify-between absolute lg:relative top-full left-0 w-full py-1 px-8 z-10 lg:top-0 justify-items-cente">
+        <div class="flex flex-col lg:flex-row md:flex-row mb-4 lg:mb-0 mt-4 mx-auto">
+          <a href="/index.html"
+            class="font-bold uppercase pb-2 mb-2 px-3 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr- 4 ease-in-out mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center">Inicio</a>
+          <a href="../../views/pages/acercade.html"
+            class="font-bold uppercase pb-2 mb-2 px-3 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr- 4 ease-in-out mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center">Sobre
+            Nosotros</a>
+
+          <a href="../pages/contact.html"
+            class="font-bold uppercase pb-2 mb-2 px-2.5 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-4 ease-in-out mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center">Contáctanos</a>
+        </div>
+      </div>
+
+      <button id="search-button" class="text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none focus:ring">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-4.35-4.35M18.65 10.65a7 7 0 1 0-9.9 9.9 7 7 0 0 0 9.9-9.9z"></path>
+        </svg>
+      </button>
+      <div id="search-container"
+        class="search-container w-40 overflow-hidden flex items-center bg-white rounded transition-all duration-500 ease-in-out ml-2">
+        <input type="search" name="search" id="search" placeholder="Busqueda"
+          class="w-full border-none bg-transparent p-1 text-black outline-none placeholder-gray-500" />
+      </div>
+    </div>
+  </nav>
+</header>
 
 
 
   <main>
+    <section>
+      <div class="relative overflow-x-auto shadow-md sm:rounded-lg px-6 py-3">
+        <button id="btnRegistro" type="button"
+          class="text-gray-700 uppercase bg-blue-70 dark:bg-blue-700 dark:text-blue-400 shadow-lg px-6 py-3">Listar</button>
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+          <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <tbody id="registros">
+            <tr>
+              <th scope="col" class="px-6 py-3 shadow-sm uppercase bg-gray-50 dark:bg-gray-700">
+                Email
+              </th>
+              <th scope="col" class="px-6 py-3 shadow-sm uppercase ">
+                Pasword
+              </th>
+
+            </tr>
+          </tbody>
+          </thead>
+
+        </table>
+      </div>
+    </section>
     <section>
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg px-6 py-3">
         <button id="btnRegistro" type="button"
@@ -94,7 +163,12 @@
           <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           </thead>
           <tbody id="contactos">
+          </thead>
+          <tbody id="contactos">
             <tr>
+              <th scope="col" class="px-6 py-3 shadow-sm uppercase bg-gray-50 dark:bg-gray-700">nombre</th>
+              <th scope="col" class="px-6 py-3 shadow-sm uppercase bg-gray-50 dark:bg-gray-700">email</th>
+              <th scope="col" class="px-6 py-3 shadow-sm uppercase bg-gray-50 dark:bg-gray-700">mensaje</th>
               <th scope="col" class="px-6 py-3 shadow-sm uppercase bg-gray-50 dark:bg-gray-700">nombre</th>
               <th scope="col" class="px-6 py-3 shadow-sm uppercase bg-gray-50 dark:bg-gray-700">email</th>
               <th scope="col" class="px-6 py-3 shadow-sm uppercase bg-gray-50 dark:bg-gray-700">mensaje</th>
@@ -102,10 +176,10 @@
           </tbody>
         </table>
       </div>
-    </section>
+       </section>
   </main>
 
-  <footer class="footer p-10 bg-base-300 align-items-end">
+    <footer class="footer p-10 bg-base-300 align-items-end">
     <div class="grid_3">
       <section id="text-2" class="widget widget_text">
         <div class="textwidget object-contain w-16 h-16">
