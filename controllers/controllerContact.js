@@ -12,7 +12,7 @@ export function enviar() {
   };
   contactos.push(newContacto); //coloca el registro en la ultima pocisión
   console.log(contactos);
-<<<<<<< HEAD
+
 
 }
 
@@ -44,29 +44,6 @@ export function crearRegistroContact(){
 
 
 
-=======
-}
 
-export function crearRegistroContact() {
 
-  for (let index = 0; index < contactos.length; index++) {
-    
-    let registro = document.createElement("tr");
-    let nombre = document.createElement("td");
-    let email = document.createElement("td");
-    let mensaje = document.createElement("td");
-    let acciones = document.createElement("td");
-    let editar = document.createElement("button");
-    let eliminar = document.createElement("button");
 
-    nombre.textContent = contactos[index].nombre;
-    email.textContent = contactos[index].email;
-    mensaje.textContent = contactos[index].mensaje;
-
-    acciones.append(editar, eliminar);
-    registro.append(nombre, email, mensaje, acciones);
-
-    document.getElementById("contactos").append(registro);
-  }
-}
->>>>>>> 4f3bda2f645554831751bd3fb593b59b2939fa64
