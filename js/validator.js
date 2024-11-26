@@ -6,10 +6,6 @@ if (contacto){
   contacto.addEventListener("click", enviar);
 }
 
-let contacto = document.getElementById("btnEnviar");
-if (contacto) {
-  contacto.addEventListener("click", enviar);
-}
 
 let registro = document.getElementById("btnRegistrar");
 if (registro) {
@@ -20,11 +16,7 @@ if (registro) {
 
 
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 4f3bda2f645554831751bd3fb593b59b2939fa64
 
 
 
