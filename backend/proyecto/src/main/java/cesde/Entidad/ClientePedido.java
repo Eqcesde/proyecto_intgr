@@ -1,6 +1,4 @@
-
-
-
+package cesde.Entidad;
 import java.time.LocalDate;
 
 
@@ -86,11 +84,3 @@ class Pedido extends ClientePedido {
         return estadoPedido;
     }
 }
-
-
-
-
-
-
-
-
