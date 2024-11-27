@@ -55,8 +55,32 @@ public class Main {
         }
     }
 
+<<<<<<< Updated upstream
     // ACTUALIZAR DATOS CLIENTE
     public static void actualizarCliente(Long clienteId, String nombre, int edad, String correo, String direccion, int telefono) {
+=======
+    em.getTransaction().commit();
+    em.close();
+}
+
+
+public static void eliminarCliente(Long id) {
+    EntityManager em = emf.createEntityManager();
+    em.getTransaction().begin();
+
+    Clientes cliente = em.find(Clientes.class, id);
+    if (cliente != null) {
+        em.remove(cliente); 
+    }
+
+    em.getTransaction().commit();
+    em.close();
+}
+    // ---------------------------------------PEDIDOS--------------------------------------------------------
+
+    public static void crearPedido(int pedidoId, LocalDate fechaPedido, LocalDate fechaEntrega, int clienteId,
+            String estado) {
+>>>>>>> Stashed changes
         EntityManager em = emf.createEntityManager();
         try {
             em.getTransaction().begin();
@@ -106,3 +130,95 @@ public class Main {
         }
     }
 }
+<<<<<<< Updated upstream
+=======
+
+public static Proveedores leerProveedor(Long proveedorId) {
+    EntityManager em = emf.createEntityManager();
+    Proveedores proveedor = em.find(Proveedores.class, proveedorId);
+    em.close();
+    return proveedor;
+}
+
+public static void actualizarProveedor(int proveedorId, String nombreProveedor, String telefono, String direccion, String correo) {
+    EntityManager em = emf.createEntityManager();
+    em.getTransaction().begin();
+    Proveedores proveedor = em.find(Proveedores.class, proveedorId);
+    if (proveedor != null) {
+        proveedor.setNombreProveedor(nombreProveedor);
+        proveedor.setTelefono(telefono);
+        proveedor.setDireccion(direccion);
+        proveedor.setCorreo(correo);
+    }
+    em.getTransaction().commit();
+    em.close();
+}
+
+public static void eliminarProveedor(Long proveedorId) {
+    EntityManager em = emf.createEntityManager();
+    em.getTransaction().begin();
+    Proveedores proveedor = em.find(Proveedores.class, proveedorId);
+    if (proveedor != null) {
+        em.remove(proveedor);
+    }
+    em.getTransaction().commit();
+    em.close();
+}
+
+
+// ------------------------------------------MATERIALES--------------------------------------------------------
+public static void crearMateriales(int materialId, String nombreMaterial, String tipoMaterial, int proveedorId, int cantidadDisponible) {
+    EntityManager em = emf.createEntityManager();
+    em.getTransaction().begin();
+    Materiales material = new Materiales();
+    material.setMaterialId(materialId);
+    material.setNombreMaterial(nombreMaterial);
+    material.setTipoMaterial(tipoMaterial);
+    material.setProveedorId(proveedorId);
+    material.setCantidadDisponible(cantidadDisponible);
+
+    em.persist(material);
+    em.getTransaction().commit();
+    em.close();
+}
+
+public static Materiales leerMateriales(Long materialId) {
+    EntityManager em = emf.createEntityManager();
+    Materiales material = em.find(Materiales.class, materialId);
+    em.close();
+    return material;
+}
+
+public static void actualizarMaterial(int materialId, String nombreMaterial, String tipoMaterial, int proveedorId, int cantidadDisponible) {
+    EntityManager em = emf.createEntityManager();
+    em.getTransaction().begin();
+    Materiales material = em.find(Materiales.class, materialId);
+    if (material != null) {
+        material.setMaterialId(materialId);
+        material.setNombreMaterial(nombreMaterial);
+        material.setTipoMaterial(tipoMaterial);
+        material.setProveedorId(proveedorId);
+        material.setCantidadDisponible(cantidadDisponible);
+    }
+    em.getTransaction().commit();
+    em.close();
+}
+
+public static void eliminarMaterial(Long materialId) {
+    EntityManager em = emf.createEntityManager();
+    em.getTransaction().begin();
+    Materiales material = em.find(Materiales.class, materialId);
+    if (material != null) {
+        em.remove(material);
+    }
+    em.getTransaction().commit();
+    em.close();
+}
+
+// ------------------------------------------COSTOS--------------------------------------------------------
+// ------------------------------------------INSTALACIONES SIMPLES--------------------------------------------
+// ------------------------------------------CARPINTERÍA--------------------------------------------------------
+// ------------------------------------------PLOMERÍA--------------------------------------------------------
+// ------------------------------------------ELECTRICIDAD--------------------------------------------------------
+}
+>>>>>>> Stashed changes
