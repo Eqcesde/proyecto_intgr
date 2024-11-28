@@ -1,5 +1,4 @@
 export let registros = [
-<<<<<<< HEAD
   {
     nombre: "Enderson Quiroz",
     telefono: "3101234567",
@@ -30,12 +29,6 @@ export let registros = [
     direccion: "Carrera 70 #80-20, Medellín",
     email: "camila.torres@gmail.com",
   },
-=======
-    {
-        email: "correo@correo.com",
-        password: "12345",
-    },
->>>>>>> master
 ];
 
 

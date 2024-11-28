@@ -31,7 +31,6 @@ export function listarRegistros() {
     let editar = document.createElement("button");
     let eliminar = document.createElement("button");
 
-<<<<<<< HEAD
     nombre.textContent = registros[index].nombre
     telefono.textContent = registros[index].telefono
     direccion.textContent = registros[index].direccion
@@ -39,15 +38,6 @@ export function listarRegistros() {
 
     acciones.append(editar, eliminar);
     registro.append(nombre, telefono, direccion, email, acciones);
-=======
-    
-    email.textContent = registros[index].email
-    password.textContent = registros[index].password
-    
-    acciones.append(editar, eliminar);
-    registro.append(email, password, acciones);
-    
->>>>>>> master
 
     document.getElementById("registros").append(registro);
   }
