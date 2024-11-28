@@ -1,4 +1,6 @@
+
 export let contactos = [
+<<<<<<< HEAD
   {
     nombre: "Carlos Pérez",
     email: "carlos.perez@email.com",
@@ -25,3 +27,13 @@ export let contactos = [
     mensaje: "Tengo una fuga de agua en el baño que requiere revisión y reparación urgente."
   },
 ];
+=======
+    {
+      nombre: "INSY HOGAR",
+      email: "insyHogar@gmail.Com",
+      mensaje: "Hola Somos El Grupo 3 y Este Es Nuestro Icomers de Servicios ",
+    },
+  ];
+
+
+>>>>>>> master

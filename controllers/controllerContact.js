@@ -12,12 +12,14 @@ export function enviar() {
   };
   contactos.push(newContacto); //coloca el registro en la ultima pocisión
   console.log(contactos);
+
+
 }
 
-export function crearRegistroContact() {
-
+export function crearRegistroContact(){
+ 
   for (let index = 0; index < contactos.length; index++) {
-    
+   
     let registro = document.createElement("tr");
     let nombre = document.createElement("td");
     let email = document.createElement("td");
@@ -31,8 +33,17 @@ export function crearRegistroContact() {
     mensaje.textContent = contactos[index].mensaje;
 
     acciones.append(editar, eliminar);
-    registro.append(nombre, email, mensaje, acciones);
+    registro.append(nombre, email, mensaje,acciones);
 
     document.getElementById("contactos").append(registro);
   }
 }
+
+// tabla para registrar y almacenar los datos (definir con el profe si se debe hacer)
+
+
+
+
+
+
+
