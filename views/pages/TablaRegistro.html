@@ -103,44 +103,77 @@
       </nav>
     </header>
 
-    <main>
-      <div class="relative overflow-x-auto">
-        <button id="btnRegistro" type="button">Listar</button>
-
-        <table
-          class="md:w-1/2 px-16 bg-gray-200 rounded-tl-xl rounded-bl-xl">
-
-          <thead
-            class="md:w-1/2 px-16 bg-gray-200 rounded-tl-xl rounded-bl-xl">
-          </thead>
-          <tbody id="registros">
-            <tr>
-              <td scope="col" class="px-6 py-3">Email</td>
-              <td scope="col" class="px-6 py-3">Pasword</td>
-            
-            </tr>
-          </tbody>
-        </table>
+    <main class="p-4 bg-gray-100">
+      <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <!-- Botón para registrar -->
+        <div class="flex justify-between items-center mb-4">
+          <h1 class="text-lg font-semibold text-gray-700">Gestión de Registros</h1>
+          <button 
+            class="bg-[#0D45A2] text-white py-2 px-4 rounded-xl hover:bg-[#09327B] hover:scale-105 transition duration-300"
+            id="btnRegistro" 
+            type="button">
+            Registrar
+          </button>
         </div>
-      </main>
-
-      <main>
-        <div class="relative overflow-x-auto">
-          <button id="btnEnviar" type="button">Enviar</button>
-
-        <table  class="md:w-1/2 px-16 bg-gray-200 rounded-tl-xl rounded-bl-xl">
-          <thead class="md:w-1/2 px-16 bg-gray-200 rounded-tl-xl rounded-bl-xl">
-          </thead>
-          <tbody id="contactos">
+    
+        <!-- Tabla -->
+        <table class="w-full text-sm text-left text-gray-700 bg-white rounded-lg">
+          <thead class="text-xs uppercase bg-gray-500 text-white">
             <tr>
-              <td scope="col" class="px-6 py-3">nombre</td>
-              <td scope="col" class="px-6 py-3">email</td>
-              <td scope="col" class="px-6 py-3">mensaje</td>
+              <th scope="col" class="px-6 py-3">Nombre</th>
+              <th scope="col" class="px-6 py-3">Teléfono</th>
+              <th scope="col" class="px-6 py-3">Dirección</th>
+              <th scope="col" class="px-6 py-3">Email</th>
+            </tr>
+          </thead>
+          <tbody id="registros" class="divide-y divide-gray-300">
+            <!-- Filas dinámicas se agregarán aquí -->
+            <tr>
+              <td class="px-6 py-3"></td>
+              <td class="px-6 py-3"></td>
+              <td class="px-6 py-3"></td>
+              <td class="px-6 py-3"></td>
             </tr>
           </tbody>
         </table>
       </div>
     </main>
+    
+
+    <main class="p-4 bg-gray-100">
+      <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <!-- Botón para enviar -->
+        <div class="flex justify-between items-center mb-4">
+          <h1 class="text-lg font-semibold text-gray-700">Formulario de Contacto</h1>
+          <button 
+            class="bg-[#0D45A2] text-white py-2 px-4 rounded-xl hover:bg-[#09327B] hover:scale-105 transition duration-300"
+            id="btnEnviar" 
+            type="button">
+            Enviar
+          </button>
+        </div>
+    
+        <!-- Tabla -->
+        <table class="w-full text-sm text-left text-gray-700 bg-white rounded-lg">
+          <thead class="text-xs uppercase bg-gray-500 text-white">
+            <tr>
+              <th scope="col" class="px-6 py-3">Nombre</th>
+              <th scope="col" class="px-6 py-3">Email</th>
+              <th scope="col" class="px-6 py-3">Mensaje</th>
+            </tr>
+          </thead>
+          <tbody id="contactos" class="divide-y divide-gray-300">
+            <!-- Filas dinámicas se agregarán aquí -->
+            <tr>
+              <td class="px-6 py-3"></td>
+              <td class="px-6 py-3"></td>
+              <td class="px-6 py-3"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    
 
     <footer class="footer p-10 bg-base-300">
       <div class="grid_3">

@@ -98,26 +98,36 @@
 
     <main>
         <div class="relative">
+            <!-- Imagen de fondo -->
             <img src="/views/IMG/logo-insy.jpg" class="absolute inset-0 object-cover w-full h-full m-0" alt="InsyHogar" />
-            <div class="relative bg-opacity-60 bg-deep-purple-accent-700">
+        
+            <!-- Superposición con degradado -->
+            <div class="relative bg-gradient-to-r via-blue-600 to-blue-400 bg-opacity-70">
+                <!-- Forma SVG -->
                 <svg class="absolute inset-x-0 bottom-0 text-white" viewBox="0 0 1160 163">
                     <path fill="currentColor"
                         d="M-164 13L-104 39.7C-44 66 76 120 196 141C316 162 436 152 556 119.7C676 88 796 34 916 13C1036 -8 1156 2 1216 7.7L1276 13V162.5H1216C1156 162.5 1036 162.5 916 162.5C796 162.5 676 162.5 556 162.5C436 162.5 316 162.5 196 162.5C76 162.5 -44 162.5 -104 162.5H-164V13Z">
                     </path>
                 </svg>
-                <div
-                    class="relative  py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-40">
-                    <div class="flex flex-col items-center justify-start xl:flex-row">
-                        <div class="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
-                            <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-blue-900 sm:text-6xl sm:leading-none items-center "><br class="hidden md:block" /></h2>
-                            <p class="max-w-xl mb-4 text-base text-blue-600 md:text-lg font-bold "></p>
+        
+                <!-- Contenido -->
+                <div class="relative py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-40">
+                    <div class="flex flex-col items-left justify-start xl:flex-row">
+                        <!-- Texto -->
+                        <div class="text-left max-w-xl mb-16 xl:mb-16 xl:pr-18 xl:w-7/12">
+                            <h2 class="max-w-lg mb-6 font-sans text-4xl font-extrabold tracking-tight text-gray-800 sm:text-6xl sm:leading-none">
+                                Bienvenido a InsyHogar
+                            </h2>
+                            <p class="max-w-xl mb-8 text-base text-black md:text-3xl font-extrabold">
+                                Soluciones integrales para tu hogar con estilo y calidad.
+                            </p>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+        
+
 
         <div class="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2 m-9">
             <a href="./views/pages/carpinteria.html" aria-label="View Item">
