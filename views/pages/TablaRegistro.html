@@ -8,9 +8,6 @@
   <title>Registros</title>
 </head>
 
-
-
-
 <body>
   <header>
     <nav class="z-20 py-2 relative bg-white shadow dark:bg-gray-800">
@@ -59,15 +56,8 @@
       </div>
     </nav>
   </header>
-<header>
-  <nav class="z-20 py-2 relative bg-white shadow dark:bg-gray-800">
-    <div class="container mx-auto flex px-8 xl:px-0">
-      <div class="flex flex-grow lg:w-auto lh:h-auto max-w-24 items-center">
-        <!--item center-->
-        <img class="items-center sm md lg xl 2xl" src="/views/IMG/logoINSYpeque.jpg" alt=Logo">
-      </div>
 
-<<<<<<< HEAD
+
     <main class="p-4 bg-gray-100">
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <!-- Botón para registrar -->
@@ -98,118 +88,10 @@
               <td class="px-6 py-3"></td>
               <td class="px-6 py-3"></td>
               <td class="px-6 py-3"></td>
-=======
-      <div class="flex lg:hidden justify-end w-full items-center" onclick="openMenu();">
-        <a href="#"
-          class="px-1 py-1 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr- 4 ease-in-out ml-auto">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              onclick="openMenu();" />
-          </svg>
-        </a>
-      </div>
-
-      <div id="menu"
-        class="lg:flex hidden flex-grow justify-between absolute lg:relative top-full left-0 w-full py-1 px-8 z-10 lg:top-0 justify-items-cente">
-        <div class="flex flex-col lg:flex-row md:flex-row mb-4 lg:mb-0 mt-4 mx-auto">
-          <a href="/index.html"
-            class="font-bold uppercase pb-2 mb-2 px-3 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr- 4 ease-in-out mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center">Inicio</a>
-          <a href="../../views/pages/acercade.html"
-            class="font-bold uppercase pb-2 mb-2 px-3 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr- 4 ease-in-out mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center">Sobre
-            Nosotros</a>
-
-          <a href="../pages/contact.html"
-            class="font-bold uppercase pb-2 mb-2 px-2.5 py-4 text-gray-700 transition-colors duration-300 transform rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 md:mx-2 lg:mr-4 ease-in-out mb-1 lg:mb-0 mt-15 lg:mt-0 mx-auto items-center">Contáctanos</a>
-        </div>
-      </div>
-
-      <button id="search-button" class="text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none focus:ring">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M21 21l-4.35-4.35M18.65 10.65a7 7 0 1 0-9.9 9.9 7 7 0 0 0 9.9-9.9z"></path>
-        </svg>
-      </button>
-      <div id="search-container"
-        class="search-container w-40 overflow-hidden flex items-center bg-white rounded transition-all duration-500 ease-in-out ml-2">
-        <input type="search" name="search" id="search" placeholder="Busqueda"
-          class="w-full border-none bg-transparent p-1 text-black outline-none placeholder-gray-500" />
-      </div>
-    </div>
-  </nav>
-</header>
-
-
-
-  <main>
-    <section>
-      <div class="relative overflow-x-auto shadow-md sm:rounded-lg px-6 py-3">
-        <button id="btnRegistro" type="button"
-          class="text-gray-700 uppercase bg-blue-70 dark:bg-blue-700 dark:text-blue-400 shadow-lg px-6 py-3">Listar</button>
-        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-          <tbody id="registros">
-            <tr>
-              <th scope="col" class="px-6 py-3 shadow-sm uppercase bg-gray-50 dark:bg-gray-700">
-                Email
-              </th>
-              <th scope="col" class="px-6 py-3 shadow-sm uppercase ">
-                Pasword
-              </th>
-
-            </tr>
-          </tbody>
-          </thead>
-
-        </table>
-      </div>
-    </section>
-    <section>
-      <div class="relative overflow-x-auto shadow-md sm:rounded-lg px-6 py-3">
-        <button id="btnRegistro" type="button"
-          class="text-gray-700 uppercase bg-blue-70 dark:bg-blue-700 dark:text-blue-400 shadow-lg px-6 py-3">Listar</button>
-        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-          <tbody id="registros">
-            <tr>
-              <th scope="col" class="px-6 py-3 shadow-sm uppercase bg-gray-50 dark:bg-gray-700">
-                Email
-              </th>
-              <th scope="col" class="px-6 py-3 shadow-sm uppercase ">
-                Pasword
-              </th>
-
-            </tr>
-          </tbody>
-          </thead>
-
-        </table>
-      </div>
-    </section>
-    <section>
-      <div class="relative overflow-x-auto shadow-md sm:rounded-lg px-6 py-3">
-        <button id="btnEnviar" type="button"
-          class="text-gray-700 uppercase bg-blue-70 dark:bg-blue-700 dark:text-blue-400 shadow-lg px-6 py-3">Enviar</button>
-
-        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-          </thead>
-          <tbody id="contactos">
-          </thead>
-          <tbody id="contactos">
-            <tr>
-              <th scope="col" class="px-6 py-3 shadow-sm uppercase bg-gray-50 dark:bg-gray-700">nombre</th>
-              <th scope="col" class="px-6 py-3 shadow-sm uppercase bg-gray-50 dark:bg-gray-700">email</th>
-              <th scope="col" class="px-6 py-3 shadow-sm uppercase bg-gray-50 dark:bg-gray-700">mensaje</th>
-              <th scope="col" class="px-6 py-3 shadow-sm uppercase bg-gray-50 dark:bg-gray-700">nombre</th>
-              <th scope="col" class="px-6 py-3 shadow-sm uppercase bg-gray-50 dark:bg-gray-700">email</th>
-              <th scope="col" class="px-6 py-3 shadow-sm uppercase bg-gray-50 dark:bg-gray-700">mensaje</th>
->>>>>>> master
             </tr>
           </tbody>
         </table>
       </div>
-<<<<<<< HEAD
     </main>
     
 
@@ -246,86 +128,77 @@
         </table>
       </div>
     </main>
-    
-=======
-       </section>
-  </main>
 
-    <footer class="footer p-10 bg-base-300 align-items-end">
-    <div class="grid_3">
-      <section id="text-2" class="widget widget_text">
-        <div class="textwidget object-contain w-16 h-16">
-          <img src="/views/IMG/logoINSYpeque.jpg" atl="Hogar Reparación" title="Hogar Reparación" />
-        </div>
-      </section>
->>>>>>> master
-
+    <footer class="footer p-10 bg-base-300 ">
       <div class="grid_3">
-        <section id="text-5" class="widget widget_text">
-          <h3 class="encabezadofooter font-bold">Servicios de Reparación</h3>
-          <div class="textwidget">
-            <address>
-              <ul class="address">
-                <li>
-                  Gestionamos todo el proceso de asistencia y reparación de su
-                  comunidad y hogar.
-                </li>
-                <li>
-                  Confíe en nosotros, tenemos vocación por hacerle la vida más
-                  fácil a nuestros clientes.
-                </li>
-              </ul>
-            </address>
-          </div>
-        </section>
-      </div>
-      <div class="grid_3">
-        <section id="text-4" class="widget widget_text">
-          <h3 class="encabezadofooter font-bold">CONTACTO</h3>
-          <div class="textwidget">
-            <address>
-              <ul class="phone">
-                <li>Teléfono: (+57) 300 280 5724</li>
-                <li></li>
-              </ul>
-              <ul class="email">
-                <li>reparaciones@InsyHogar.com</li>
-              </ul>
-            </address>
-          </div>
-        </section>
-      </div>
-    </div>
+          <section id="text-2" class="widget widget_text">
+              <div class="textwidget object-contain w-16 h-16"><img src="/views/IMG/logoINSYpeque.jpg"
+                      atl="Hogar Reparación" title="Hogar Reparación"></div>
+          </section>
 
-    <nav>
-      <p class="mt-4 text-gray-600"></p>
-      <h6 class="footer-title font-bold">Social</h6>
-      <font></font>
-      <div class="grid grid-flow-col gap-4">
-        <button>
-          <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-              class="fill-current hover:bg-red-900">
-              <path
-                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
-              </path>
-            </svg></a>
-          <font></font>
-        </button>
-        <button class="">
-          <a><svg xmlns="https://www.facebook.com/insyhogar?mibextid=ZbWKwL" width="24" height="24" viewBox="0 0 24 24"
-              class="fill-current hover:bg-blue-900">
-              <path
-                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
-              </path>
-            </svg></a>
-          <font></font>
-        </button>
+
+          <div class="grid_3">
+              <section id="text-5" class="widget widget_text">
+                  <h3 class="encabezadofooter font-bold">Servicios de Reparación</h3>
+                  <div class="textwidget">
+                      <address>
+                          <ul class="address">
+                              <li>Gestionamos todo el proceso de asistencia y reparación de su comunidad y hogar.
+                              </li>
+                              <li>Confíe en nosotros, tenemos vocación por hacerle la vida más fácil a nuestros
+                                  clientes.</li>
+                          </ul>
+                      </address>
+                  </div>
+              </section>
+          </div>
+          <div class="grid_3">
+              <section id="text-4" class="widget widget_text">
+                  <h3 class="encabezadofooter font-bold">CONTACTO</h3>
+                  <div class="textwidget">
+                      <address>
+                          <ul class="phone">
+                              <li>Teléfono: (+57) 300 280 5724</li>
+                              <li></li>
+                          </ul>
+                          <ul class="email">
+                              <li>reparaciones@InsyHogar.com</li>
+                          </ul>
+                      </address>
+                  </div>
+              </section>
+          </div>
       </div>
-      <font></font>
-    </nav>
+
+      <nav>
+          <p class="mt-4 text-gray-600"></p>
+          <h6 class="footer-title font-bold ">Social</h6>
+          <font></font>
+          <div class="grid grid-flow-col gap-4">
+              <button>
+                  <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                          class="fill-current hover:bg-red-900">
+                          <path
+                              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                          </path>
+                      </svg></a>
+                  <font></font>
+              </button>
+              <button class=>
+                  <a><svg xmlns="https://www.facebook.com/insyhogar?mibextid=ZbWKwL" width="24" height="24"
+                          viewBox="0 0 24 24" class="fill-current hover:bg-blue-900">
+                          <path
+                              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                          </path>
+                      </svg></a>
+                  <font></font>
+              </button>
+          </div>
+          <font></font>
+      </nav>
+
   </footer>
 
-<<<<<<< HEAD
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="/js/script.js"></script>
     <script src="/js/kitwind,config.js"></script>
@@ -336,17 +209,3 @@
     ></script>
   </body>
 </html>
-=======
-
-
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script type="module" src="/js/script.js"></script>
-  <script src="/js/kitwind,config.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
-</body>
-
-</html>
->>>>>>> master
